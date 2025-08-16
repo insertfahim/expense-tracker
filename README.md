@@ -10,86 +10,99 @@ A modern, full-stack Personal Expense Tracker built with Next.js, MongoDB, and T
 ## 🎯 Features
 
 ### Core Features
-- ✅ **User Authentication** - JWT-based login and registration
-- ✅ **Expense Management** - Add, view, edit, and delete expenses
-- ✅ **Category System** - Organize expenses by categories (Food, Transport, Shopping, etc.)
-- ✅ **Date Validation** - Proper date handling and validation
-- ✅ **Responsive Design** - Mobile-first, fully responsive UI
+
+-   ✅ **User Authentication** - JWT-based login and registration
+-   ✅ **Expense Management** - Add, view, edit, and delete expenses
+-   ✅ **Category System** - Organize expenses by categories (Food, Transport, Shopping, etc.)
+-   ✅ **Date Validation** - Proper date handling and validation
+-   ✅ **Responsive Design** - Mobile-first, fully responsive UI
 
 ### Advanced Features
-- ✅ **Data Visualization** - Interactive pie charts showing expenses by category
-- ✅ **Advanced Filtering** - Filter by category, date range, and amount
-- ✅ **Real-time Updates** - Instant UI updates after operations
-- ✅ **Total Calculation** - Automatic expense total calculation
-- ✅ **Protected Routes** - Secure API endpoints with JWT middleware
+
+-   ✅ **Data Visualization** - Interactive pie charts showing expenses by category
+-   ✅ **Advanced Filtering** - Filter by category, date range, and amount
+-   ✅ **Real-time Updates** - Instant UI updates after operations
+-   ✅ **Total Calculation** - Automatic expense total calculation
+-   ✅ **Protected Routes** - Secure API endpoints with JWT middleware
 
 ## 🛠 Tech Stack
 
 ### Frontend
-- **Next.js 15.2.4** - React framework with App Router
-- **TypeScript** - Type safety and better developer experience
-- **Tailwind CSS** - Utility-first CSS framework
-- **shadcn/ui** - Modern, accessible UI components
-- **Recharts** - Interactive charts and data visualization
-- **React Hook Form** - Form handling with validation
+
+-   **Next.js 15.2.4** - React framework with App Router
+-   **TypeScript** - Type safety and better developer experience
+-   **Tailwind CSS** - Utility-first CSS framework
+-   **shadcn/ui** - Modern, accessible UI components
+-   **Recharts** - Interactive charts and data visualization
+-   **React Hook Form** - Form handling with validation
 
 ### Backend
-- **Node.js** - Runtime environment
-- **Next.js API Routes** - RESTful API endpoints
-- **MongoDB** - NoSQL database with Mongoose ODM
-- **JWT** - JSON Web Tokens for authentication
-- **bcryptjs** - Password hashing
+
+-   **Node.js** - Runtime environment
+-   **Next.js API Routes** - RESTful API endpoints
+-   **MongoDB** - NoSQL database with Mongoose ODM
+-   **JWT** - JSON Web Tokens for authentication
+-   **bcryptjs** - Password hashing
 
 ## 📋 Requirements Met
 
 This project fulfills all requirements from the MERN Stack Developer Assessment:
 
 ### ✅ Backend Requirements
-- **REST API Endpoints:**
-  - `POST /api/expenses` - Add new expense
-  - `GET /api/expenses` - Fetch all user expenses
-  - `PATCH /api/expenses/:id` - Update expense
-  - `DELETE /api/expenses/:id` - Delete expense
 
-- **Validation Rules:**
-  - Title: Required, minimum 3 characters
-  - Amount: Required, number greater than 0
-  - Date: Required, valid date format
-  - Category: Required, predefined categories
+-   **REST API Endpoints:**
 
-- **Database:** MongoDB with Mongoose schemas
+    -   `POST /api/expenses` - Add new expense
+    -   `GET /api/expenses` - Fetch all user expenses
+    -   `PATCH /api/expenses/:id` - Update expense
+    -   `DELETE /api/expenses/:id` - Delete expense
+
+-   **Validation Rules:**
+
+    -   Title: Required, minimum 3 characters
+    -   Amount: Required, number greater than 0
+    -   Date: Required, valid date format
+    -   Category: Required, predefined categories
+
+-   **Database:** MongoDB with Mongoose schemas
 
 ### ✅ Frontend Requirements
-- **Add Expense Form** - All required fields with dropdown and date picker
-- **Expense List View** - Table/card layout with total amount display
-- **Category Badges** - Visual category indicators
-- **Edit/Delete Functionality** - Full CRUD operations
+
+-   **Add Expense Form** - All required fields with dropdown and date picker
+-   **Expense List View** - Table/card layout with total amount display
+-   **Category Badges** - Visual category indicators
+-   **Edit/Delete Functionality** - Full CRUD operations
 
 ### ✅ UI/UX & Responsiveness
-- Fully responsive for mobile, tablet, and desktop
-- Modern, clean design with Tailwind CSS
-- Intuitive user interface
+
+-   Fully responsive for mobile, tablet, and desktop
+-   Modern, clean design with Tailwind CSS
+-   Intuitive user interface
 
 ### ✅ Bonus Features
-- Filter by category and date range ✅
-- Interactive pie chart visualization ✅
-- JWT authentication with login & register ✅
-- Ready for deployment ✅
+
+-   Filter by category and date range ✅
+-   Interactive pie chart visualization ✅
+-   JWT authentication with login & register ✅
+-   Ready for deployment ✅
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+ installed
-- MongoDB database (local or MongoDB Atlas)
-- Git
+
+-   Node.js 18+ installed
+-   MongoDB database (local or MongoDB Atlas)
+-   Git
 
 ### 1. Clone the Repository
+
 ```bash
 git clone <repository-url>
 cd expense-tracker
 ```
 
 ### 2. Install Dependencies
+
 ```bash
 npm install
 # or
@@ -99,12 +112,15 @@ pnpm install
 ```
 
 ### 3. Environment Setup
+
 Create a `.env.local` file in the root directory:
+
 ```bash
 cp .env.example .env.local
 ```
 
 Edit `.env.local` with your configuration:
+
 ```env
 MONGODB_URI=mongodb://localhost:27017/expense-tracker
 JWT_SECRET=your-super-secure-jwt-secret-key
@@ -114,17 +130,20 @@ NEXTAUTH_URL=http://localhost:3000
 ### 4. Database Setup
 
 #### Option A: Local MongoDB
+
 1. Install MongoDB locally
 2. Start MongoDB service
 3. Use connection string: `mongodb://localhost:27017/expense-tracker`
 
 #### Option B: MongoDB Atlas (Recommended)
+
 1. Create account at [MongoDB Atlas](https://www.mongodb.com/atlas)
 2. Create a new cluster
 3. Get connection string and replace in `.env.local`
 4. Whitelist your IP address
 
 ### 5. Run the Application
+
 ```bash
 npm run dev
 # or
@@ -177,6 +196,7 @@ expense-tracker/
 ### Authentication Endpoints
 
 #### Register User
+
 ```http
 POST /api/auth/register
 Content-Type: application/json
@@ -189,6 +209,7 @@ Content-Type: application/json
 ```
 
 #### Login User
+
 ```http
 POST /api/auth/login
 Content-Type: application/json
@@ -202,12 +223,14 @@ Content-Type: application/json
 ### Expense Endpoints (Requires Authentication)
 
 #### Get All Expenses
+
 ```http
 GET /api/expenses
 Authorization: Bearer <jwt_token>
 ```
 
 #### Add New Expense
+
 ```http
 POST /api/expenses
 Authorization: Bearer <jwt_token>
@@ -222,6 +245,7 @@ Content-Type: application/json
 ```
 
 #### Update Expense
+
 ```http
 PATCH /api/expenses/:id
 Authorization: Bearer <jwt_token>
@@ -236,6 +260,7 @@ Content-Type: application/json
 ```
 
 #### Delete Expense
+
 ```http
 DELETE /api/expenses/:id
 Authorization: Bearer <jwt_token>
@@ -244,43 +269,49 @@ Authorization: Bearer <jwt_token>
 ## 📱 Usage Guide
 
 ### 1. User Registration/Login
-- Visit the application homepage
-- Click "Sign Up" to create a new account
-- Or click "Sign In" if you already have an account
-- Fill in the required information
+
+-   Visit the application homepage
+-   Click "Sign Up" to create a new account
+-   Or click "Sign In" if you already have an account
+-   Fill in the required information
 
 ### 2. Adding Expenses
-- Click the "+" button to add a new expense
-- Fill in the expense details:
-  - Title (minimum 3 characters)
-  - Amount (must be greater than 0)
-  - Category (select from dropdown)
-  - Date (use date picker)
-- Click "Add Expense" to save
+
+-   Click the "+" button to add a new expense
+-   Fill in the expense details:
+    -   Title (minimum 3 characters)
+    -   Amount (must be greater than 0)
+    -   Category (select from dropdown)
+    -   Date (use date picker)
+-   Click "Add Expense" to save
 
 ### 3. Managing Expenses
-- View all expenses in the main dashboard
-- See total amount at the top
-- Edit expenses by clicking the edit icon
-- Delete expenses by clicking the trash icon
+
+-   View all expenses in the main dashboard
+-   See total amount at the top
+-   Edit expenses by clicking the edit icon
+-   Delete expenses by clicking the trash icon
 
 ### 4. Filtering and Analysis
-- Use the "Filters" button to filter expenses by:
-  - Category
-  - Date range
-  - Amount range
-- Click "Charts" to view pie chart visualization
-- Charts show expense distribution by category
+
+-   Use the "Filters" button to filter expenses by:
+    -   Category
+    -   Date range
+    -   Amount range
+-   Click "Charts" to view pie chart visualization
+-   Charts show expense distribution by category
 
 ## 🚀 Deployment
 
 ### Frontend (Vercel) - Recommended
+
 1. Push code to GitHub
 2. Connect repository to [Vercel](https://vercel.com)
 3. Add environment variables in Vercel dashboard
 4. Deploy automatically
 
 ### Backend API (Render) - If separate
+
 1. Create account at [Render](https://render.com)
 2. Connect GitHub repository
 3. Create new Web Service
@@ -288,6 +319,7 @@ Authorization: Bearer <jwt_token>
 5. Deploy
 
 ### Database (MongoDB Atlas)
+
 1. Create cluster at [MongoDB Atlas](https://www.mongodb.com/atlas)
 2. Get connection string
 3. Update MONGODB_URI in environment variables
@@ -333,30 +365,32 @@ This project maintains a clean git history with meaningful commits:
 
 ## 🔐 Security Features
 
-- **Password Hashing** - bcryptjs with salt rounds
-- **JWT Authentication** - Secure token-based auth
-- **Protected API Routes** - Middleware authentication
-- **Input Validation** - Server-side validation for all inputs
-- **User Data Isolation** - Users can only access their own data
+-   **Password Hashing** - bcryptjs with salt rounds
+-   **JWT Authentication** - Secure token-based auth
+-   **Protected API Routes** - Middleware authentication
+-   **Input Validation** - Server-side validation for all inputs
+-   **User Data Isolation** - Users can only access their own data
 
 ## 🐛 Troubleshooting
 
 ### Common Issues
 
 1. **Database Connection Error**
-   - Check MongoDB is running
-   - Verify connection string in `.env.local`
-   - Check network connectivity for Atlas
+
+    - Check MongoDB is running
+    - Verify connection string in `.env.local`
+    - Check network connectivity for Atlas
 
 2. **Authentication Issues**
-   - Verify JWT_SECRET is set
-   - Check token expiration
-   - Clear browser local storage
+
+    - Verify JWT_SECRET is set
+    - Check token expiration
+    - Clear browser local storage
 
 3. **Build Errors**
-   - Delete `node_modules` and reinstall
-   - Clear Next.js cache: `rm -rf .next`
-   - Check TypeScript errors
+    - Delete `node_modules` and reinstall
+    - Clear Next.js cache: `rm -rf .next`
+    - Check TypeScript errors
 
 ## 📄 License
 
@@ -365,16 +399,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+
+-   GitHub: [@yourusername](https://github.com/yourusername)
+-   Email: your.email@example.com
 
 ## 🙏 Acknowledgments
 
-- [Next.js](https://nextjs.org/) for the amazing React framework
-- [MongoDB](https://www.mongodb.com/) for the flexible database
-- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS
-- [shadcn/ui](https://ui.shadcn.com/) for the beautiful components
-- [Recharts](https://recharts.org/) for the data visualization
+-   [Next.js](https://nextjs.org/) for the amazing React framework
+-   [MongoDB](https://www.mongodb.com/) for the flexible database
+-   [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS
+-   [shadcn/ui](https://ui.shadcn.com/) for the beautiful components
+-   [Recharts](https://recharts.org/) for the data visualization
 
 ---
 
