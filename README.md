@@ -122,25 +122,29 @@ cp .env.example .env.local
 Edit `.env.local` with your configuration:
 
 ```env
-MONGODB_URI=mongodb://localhost:27017/expense-tracker
+MONGODB_URI=mongodb+srv://admin:admin@mariyaquiz.gd34udu.mongodb.net/expense-tracker?retryWrites=true&w=majority&appName=mariyaquiz
 JWT_SECRET=your-super-secure-jwt-secret-key
 NEXTAUTH_URL=http://localhost:3000
 ```
 
 ### 4. Database Setup
 
-#### Option A: Local MongoDB
+#### Option A: MongoDB Atlas (Pre-configured)
+
+The project is already configured to use MongoDB Atlas with the provided connection string. The database is ready to use with:
+
+-   **Database**: `expense-tracker`
+-   **Cluster**: `mariyaquiz.gd34udu.mongodb.net`
+-   **Username**: `admin`
+-   **Password**: `admin`
+
+No additional setup required - just ensure your IP is whitelisted in the MongoDB Atlas dashboard.
+
+#### Option B: Local MongoDB (Alternative)
 
 1. Install MongoDB locally
 2. Start MongoDB service
-3. Use connection string: `mongodb://localhost:27017/expense-tracker`
-
-#### Option B: MongoDB Atlas (Recommended)
-
-1. Create account at [MongoDB Atlas](https://www.mongodb.com/atlas)
-2. Create a new cluster
-3. Get connection string and replace in `.env.local`
-4. Whitelist your IP address
+3. Change MONGODB_URI in `.env.local` to: `mongodb://localhost:27017/expense-tracker`
 
 ### 5. Run the Application
 
