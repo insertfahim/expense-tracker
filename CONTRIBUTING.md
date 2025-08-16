@@ -5,10 +5,11 @@ Thank you for considering contributing to the Personal Expense Tracker project! 
 ## Code of Conduct
 
 By participating in this project, you agree to abide by our Code of Conduct:
-- Be respectful and inclusive
-- Provide constructive feedback
-- Focus on what is best for the community
-- Show empathy towards other contributors
+
+-   Be respectful and inclusive
+-   Provide constructive feedback
+-   Focus on what is best for the community
+-   Show empathy towards other contributors
 
 ## How to Contribute
 
@@ -17,20 +18,22 @@ By participating in this project, you agree to abide by our Code of Conduct:
 Before creating bug reports, please check the existing issues to avoid duplicates.
 
 **Bug Report Template:**
-- **Description**: A clear description of what the bug is
-- **Steps to Reproduce**: Detailed steps to reproduce the issue
-- **Expected Behavior**: What you expected to happen
-- **Actual Behavior**: What actually happened
-- **Environment**: OS, browser, Node.js version
-- **Screenshots**: If applicable
+
+-   **Description**: A clear description of what the bug is
+-   **Steps to Reproduce**: Detailed steps to reproduce the issue
+-   **Expected Behavior**: What you expected to happen
+-   **Actual Behavior**: What actually happened
+-   **Environment**: OS, browser, Node.js version
+-   **Screenshots**: If applicable
 
 ### Suggesting Enhancements
 
 Enhancement suggestions are tracked as GitHub issues. When creating an enhancement suggestion, please include:
-- **Clear title and description**
-- **Use case**: Why would this enhancement be useful?
-- **Alternatives considered**: Other solutions you've considered
-- **Implementation ideas**: If you have ideas on how to implement
+
+-   **Clear title and description**
+-   **Use case**: Why would this enhancement be useful?
+-   **Alternatives considered**: Other solutions you've considered
+-   **Implementation ideas**: If you have ideas on how to implement
 
 ### Pull Requests
 
@@ -63,29 +66,34 @@ npm run dev
 ### Coding Standards
 
 #### TypeScript
-- Use TypeScript for all new code
-- Provide proper type definitions
-- Avoid `any` types when possible
+
+-   Use TypeScript for all new code
+-   Provide proper type definitions
+-   Avoid `any` types when possible
 
 #### React/Next.js
-- Use functional components with hooks
-- Follow React best practices
-- Use proper component naming (PascalCase)
+
+-   Use functional components with hooks
+-   Follow React best practices
+-   Use proper component naming (PascalCase)
 
 #### Styling
-- Use Tailwind CSS for styling
-- Follow mobile-first responsive design
-- Use semantic class names
+
+-   Use Tailwind CSS for styling
+-   Follow mobile-first responsive design
+-   Use semantic class names
 
 #### API Design
-- Follow RESTful conventions
-- Use proper HTTP status codes
-- Implement proper error handling
-- Document API endpoints
+
+-   Follow RESTful conventions
+-   Use proper HTTP status codes
+-   Implement proper error handling
+-   Document API endpoints
 
 ### Commit Messages
 
 Use conventional commit format:
+
 ```
 type(scope): description
 
@@ -95,15 +103,17 @@ footer (optional)
 ```
 
 **Types:**
-- `feat`: New feature
-- `fix`: Bug fix
-- `docs`: Documentation changes
-- `style`: Code style changes
-- `refactor`: Code refactoring
-- `test`: Adding or updating tests
-- `chore`: Maintenance tasks
+
+-   `feat`: New feature
+-   `fix`: Bug fix
+-   `docs`: Documentation changes
+-   `style`: Code style changes
+-   `refactor`: Code refactoring
+-   `test`: Adding or updating tests
+-   `chore`: Maintenance tasks
 
 **Examples:**
+
 ```
 feat(auth): add password reset functionality
 fix(api): handle database connection errors
@@ -112,17 +122,17 @@ docs(readme): update installation instructions
 
 ### Testing
 
-- Write tests for new features
-- Ensure existing tests pass
-- Test in multiple browsers
-- Verify mobile responsiveness
+-   Write tests for new features
+-   Ensure existing tests pass
+-   Test in multiple browsers
+-   Verify mobile responsiveness
 
 ### Documentation
 
-- Update README.md if needed
-- Add JSDoc comments for functions
-- Update API documentation
-- Include examples in documentation
+-   Update README.md if needed
+-   Add JSDoc comments for functions
+-   Update API documentation
+-   Include examples in documentation
 
 ## Project Structure
 
@@ -149,9 +159,10 @@ expense-tracker/
 ## Recognition
 
 Contributors will be recognized in:
-- README.md contributors section
-- Release notes for significant contributions
-- GitHub contributors page
+
+-   README.md contributors section
+-   Release notes for significant contributions
+-   GitHub contributors page
 
 ## Questions?
 

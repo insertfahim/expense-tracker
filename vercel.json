@@ -1,13 +1,13 @@
 {
-  "build": {
-    "env": {
-      "NODE_VERSION": "18.x"
+    "build": {
+        "env": {
+            "NODE_VERSION": "18.x"
+        }
+    },
+    "functions": {
+        "app/api/**/*.js": {
+            "memory": 512,
+            "maxDuration": 10
+        }
     }
-  },
-  "functions": {
-    "app/api/**/*.js": {
-      "memory": 512,
-      "maxDuration": 10
-    }
-  }
 }
